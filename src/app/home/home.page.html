@@ -1,10 +1,29 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button >
+        <ion-icon class="close-icon" slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-
+<ion-content [fullscreen]="true" >
+  <ion-card>
+    <ion-img src="/assets/img/svg/IMG-GM35.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-title class="card-title">Your item's pathways have been gererated!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text class="">
+        <p> GoodMine is currently utilising organisation information only from the borough of Islington.</p>
+      </ion-text>
+      <br />
+      <ion-text class="">
+        <p>Don't worry if you don't see any pathways for your item. At this time, it is due your location, but we have saved your activity in our database and will get in touch once we have expanded our reach beyond Islington.</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 <app-atom-footer-lg
   [footerText]="'VIEW RESULTS'"

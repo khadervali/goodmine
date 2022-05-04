@@ -6,6 +6,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  text-decoration: none;
 }
 
 #container strong {
@@ -16,12 +17,51 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+ion-content, ion-header {
+  --background: #F4F4F4;
+}
+
+ion-header {
+  --ion-toolbar-background: #F4F4F4;
+}
+
+ion-text, p {
+  color: rgba(27,28,29,0.7);
+  font-family: "Readex Pro";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+
+ion-card {
+  background: #F4F4F4;
+  box-shadow: none !important;
+}
+
+.close-icon {
+  color: #00AFFF;
+  height: 24px;
+  width: 24px;
+  padding: 16px 0 !important;
+}
+
+.top-img {
+  width: 325.87px;
+  height: 191px;
+  padding: 25px;
+}
+
+.card-title {
+  --color: #1B1C1D;
+  font-family: "Readex Pro";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-align: center;
 }
